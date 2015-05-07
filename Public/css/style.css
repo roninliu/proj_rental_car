@@ -15,5 +15,26 @@
 .banner .rslides img{display:block;float:left;width:100%;height:auto;border:0;}
 
 
+.deck{background: url(../images/y-bg.png) repeat; border-bottom: 1px solid #d2d2d2;}
+.deck .single{padding: 15px 0;background: url(../images/welcome.png) no-repeat center center;display: block;margin: 0 auto; width: 324px;height: 40px;clear: both;}
+.deck .line{display: block;float: left;}
+.deck .line-1{width: 10%;border-top: 6px solid #025ebc;}
+.deck .line-2{width: 20%;border-top: 6px solid #54c11b;}
+.deck .line-3{width: 30%;border-top: 6px solid #ffea00;}
+.deck .line-4{width: 40%;border-top: 6px solid #f60200;}
 
+.main{padding: 30px 0 10px 0;}
+.main .inner{width: 1200px;margin: 0 auto;}
+.main .cols{float: left;}
+.main .cols-left{width: 300px;}
+.main .cols-middle{margin: 0 30px; width: 550px;}
+.main .cols-right{width: 290px;}
+.main .cols-btm{clear: both;}
+.main .cols-btm ul{margin-left: -45px;}
+.main .cols-btm ul li{float: left; margin-left: 45px}
+
+
+
+.main .panel .hd{background: url(../images/zxdl2.png) no-repeat 8px bottom; border-top: 1px solid #d2d2d2; border-bottom: 1px solid #d2d2d2; color: #FE7C7C;font-size: 16px; padding: 10px}
+.main .panel .bd{padding: 10px;}
 

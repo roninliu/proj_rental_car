@@ -2,6 +2,17 @@
  *	index模块
  */
 define(function(require, exports, module) {
+	var config = require("./config");
+
+	var getHotTravelHandler = function(){
+		$.ajax({
+			url:config.HOME_BASE_URL+"travel/getHotTravelHandler",
+			type:"GET",
+			success:function(feedback){
+				console.log(feedback);
+			}
+		})
+	}
 	/*var initDatePicker = function() {
 		$("#getdatepicker").datepicker({
 			showOn: "button",
@@ -50,5 +61,6 @@ define(function(require, exports, module) {
 
 	exports.init = function() {
 		$("#banner").responsiveSlides();
+		getHotTravelHandler();
 	}
 })

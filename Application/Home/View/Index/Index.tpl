@@ -44,9 +44,50 @@
 			</li>
 		</ul>
 	</div>
+	<div class="deck">
+			<i class="line line-1"></i>
+			<i class="line line-2"></i>
+			<i class="line line-3"></i>
+			<i class="line line-4"></i>
+			<i class="single"></i>
+		</div>
 	<div class="main">
 		<div class="inner">
-			<div class=""></div>
+			<div class="cols panel cols-left">
+				<div class="hd">租车预定</div>
+				<div class="bd">111</div>
+			</div>
+			<div class="cols panel cols-middle">
+				<div class="hd">新闻动态</div>
+				<div class="bd">22222</div>
+			</div>
+			<div class="cols panel cols-right">
+				<div class="hd">机场服务</div>
+				<div class="bd">55544333333</div>
+			</div>
+			<div class="panel cols-btm">
+				<div class="hd">景点推荐</div>
+				<div class="bd">
+					<ul>
+						<li>
+							<div class="img"><a href=""><img src="" alt=""></a></div>
+							<div class="txt"><a href=""></a></div>
+						</li>
+						<li>
+							<div class="img"></div>
+							<div class="txt"></div>
+						</li>
+						<li>
+							<div class="img"></div>
+							<div class="txt"></div>
+						</li>
+						<li>
+							<div class="img"></div>
+							<div class="txt"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="footer">
