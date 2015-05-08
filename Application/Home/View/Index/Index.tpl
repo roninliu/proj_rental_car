@@ -59,33 +59,33 @@
 			</div>
 			<div class="cols panel cols-middle">
 				<div class="hd">新闻动态</div>
-				<div class="bd">22222</div>
+				<div class="bd">
+					
+				</div>
 			</div>
 			<div class="cols panel cols-right">
 				<div class="hd">机场服务</div>
-				<div class="bd">55544333333</div>
+				<div class="bd">
+					<div class="service">
+						<img src="__ROOT__/Public/images/img/noimage.png" alt="">
+						<h4 class="name">九寨沟机场</h4>
+						<p><span>服务时间:</span>08:00-20:00</p>
+						<p><span>联系电话:</span>13988888888</p>
+						<p><span>服务地点:</span>机场出口左转100米</p>
+					</div>
+					<div class="service">
+						<img src="__ROOT__/Public/images/img/noimage.png" alt="">
+						<h4 class="name">红原机场</h4>
+						<p><span>服务时间:</span>08:00-20:00</p>
+						<p><span>联系电话:</span>13988888888</p>
+						<p><span>服务地点:</span>机场出口前行50米</p>
+					</div>
+				</div>
 			</div>
 			<div class="panel cols-btm">
 				<div class="hd">景点推荐</div>
 				<div class="bd">
-					<ul>
-						<li>
-							<div class="img"><a href=""><img src="" alt=""></a></div>
-							<div class="txt"><a href=""></a></div>
-						</li>
-						<li>
-							<div class="img"></div>
-							<div class="txt"></div>
-						</li>
-						<li>
-							<div class="img"></div>
-							<div class="txt"></div>
-						</li>
-						<li>
-							<div class="img"></div>
-							<div class="txt"></div>
-						</li>
-					</ul>
+					<ul id="j_hot_travel"></ul>
 				</div>
 			</div>
 		</div>

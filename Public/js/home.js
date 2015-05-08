@@ -2,18 +2,35 @@
  *	index模块
  */
 define(function(require, exports, module) {
-	var config = require("./config");
+    var config = require("./config");
 
-	var getHotTravelHandler = function(){
-		$.ajax({
-			url:config.HOME_BASE_URL+"travel/getHotTravelHandler",
-			type:"GET",
-			success:function(feedback){
-				console.log(feedback);
-			}
-		})
-	}
-	/*var initDatePicker = function() {
+    var getHotTravelHandler = function() {
+            $.ajax({
+                url: config.HOME_BASE_URL + "travel/getHotTravelHandler",
+                type: "GET",
+                success: function(feedback) {
+                    console.log(feedback);
+                    if (feedback != null) {
+                        var hotTravel = $("#j_hot_travel");
+                        hotTravel.find("li").remove();
+                        for (var i = 0; i < feedback.length; i++) {
+                            var item = feedback[i];
+                            var liStr = '<li>';
+                            if(item["hot_img"] == null){
+                            	liStr += '<div class="img"><a href="" class="travel-no-img"></a></div>';
+                            }else{
+                            	liStr += '<div class="img"><a href=""><img src="' + item["hot_img"] + '" alt=""></a></div>';
+
+                            }
+                            liStr += '<div class="txt"><a href="">' + item["title"] + '</a></div>';
+                            liStr += '</li>';
+                            hotTravel.append(liStr);
+                        };
+                    }
+                }
+            })
+        }
+        /*var initDatePicker = function() {
 		$("#getdatepicker").datepicker({
 			showOn: "button",
 			buttonImage: "Public/images/calendar.gif",
@@ -54,13 +71,13 @@ define(function(require, exports, module) {
 		$.datepicker.setDefaults($.datepicker.regional['zh-CN']);
 	});
 */
-	/**
-	 * [init 初始化方法]
-	 * 注册相关事件
-	 */
+        /**
+         * [init 初始化方法]
+         * 注册相关事件
+         */
 
-	exports.init = function() {
-		$("#banner").responsiveSlides();
-		getHotTravelHandler();
-	}
+    exports.init = function() {
+        $("#banner").responsiveSlides();
+        getHotTravelHandler();
+    }
 })
